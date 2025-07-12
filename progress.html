@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress Tracker | Fitness Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="diet.html" class="nav-link">Diet Planner</a>
+    <a href="bmi.html" class="nav-link">BMI Calculator</a>
+    <a href="calorie.html" class="nav-link">Calorie Calculator</a>
+    <a href="progress.html" class="nav-link active">Progress Tracker</a>
+  </nav>
+  <header>
+    <h1>🏆 Progress Tracker</h1>
+    <p>Log your completed workouts and track your fitness journey!</p>
+  </header>
+  <main>
+    <form id="progressForm" class="form-card">
+      <label for="progressBodyPart">Body Part:
+        <select id="progressBodyPart" required>
+          <option value="">Select body part</option>
+          <option value="chest">Chest</option>
+          <option value="arms">Arms</option>
+          <option value="legs">Legs</option>
+          <option value="back">Back</option>
+          <option value="shoulders">Shoulders</option>
+          <option value="abs">Abs</option>
+        </select>
+      </label>
+      <label for="progressExercise">Exercise Name:
+        <input type="text" id="progressExercise" required placeholder="e.g. Push-Ups" />
+      </label>
+      <label for="progressDate">Date:
+        <input type="date" id="progressDate" required />
+      </label>
+      <button type="submit">Log Workout</button>
+    </form>
+    <section id="progressStats" style="margin:2rem auto;max-width:600px;text-align:center;"></section>
+    <section id="progressChart" style="margin:2rem auto;max-width:600px;text-align:center;"></section>
+    <section id="progressHistory" style="margin:2rem auto;max-width:800px;"></section>
+  </main>
+  <div id="footer-root"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer-root').innerHTML = html);
+  </script>
+  <script src="progress.js"></script>
+</body>
+</html> 

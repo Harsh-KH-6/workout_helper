@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Pro - Transform Your Body</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="diet.html" class="nav-link">Diet Planner</a>
+    <a href="bmi.html" class="nav-link">BMI Calculator</a>
+    <a href="calorie.html" class="nav-link">Calorie Calculator</a>
+    <a href="progress.html" class="nav-link">Progress Tracker</a>
+  </nav>
+
+  <div class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 class="hero-title">🏋️ FITNESS PRO</h1>
+      <p class="hero-subtitle">"STRENGTH DOESN'T COME FROM WHAT YOU CAN DO. IT COMES FROM OVERCOMING THE THINGS YOU THOUGHT YOU COULDN'T."</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">6</span>
+          <span class="stat-label">Body Parts</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">36+</span>
+          <span class="stat-label">Exercises</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Available</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-content">
+    <div class="workout-selector">
+      <h2 class="section-title">Choose Your Target Area</h2>
+      <p class="section-subtitle">Select a body part to discover powerful exercises that will transform your physique</p>
+      
+      <div class="selector-card">
+        <div class="selector-group">
+          <label for="bodyPart" class="selector-label">🎯 Target Body Part:</label>
+          <select id="bodyPart" class="body-part-select">
+            <option value="chest">Chest</option>
+            <option value="arms">Arms</option>
+            <option value="legs">Legs</option>
+            <option value="back">Back</option>
+            <option value="shoulders">Shoulders</option>
+            <option value="abs">Abs</option>
+          </select>
+        </div>
+        <button id="showBtn" class="show-exercises-btn" aria-label="Show exercises for selected body part">
+          <span class="btn-text">SHOW EXERCISES</span>
+          <span class="btn-icon" aria-hidden="true">💪</span>
+        </button>
+      </div>
+    </div>
+
+    <section id="exerciseList" class="exercise-container">
+      <!-- Exercises will appear here -->
+    </section>
+  </main>
+
+  <div id="footer-root"></div>
+  
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer-root').innerHTML = html);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html> 

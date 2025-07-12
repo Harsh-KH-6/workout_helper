@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calorie Calculator | Workout Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="diet.html" class="nav-link">Diet Planner</a>
+    <a href="bmi.html" class="nav-link">BMI Calculator</a>
+    <a href="calorie.html" class="nav-link active">Calorie Calculator</a>
+    <a href="progress.html" class="nav-link">Progress Tracker</a>
+  </nav>
+  <header>
+    <h1>Calorie Calculator</h1>
+    <p>Estimate your daily calorie needs based on your stats and activity</p>
+  </header>
+  <main>
+    <form id="calorieForm" class="form-card">
+      <label for="age">Age:
+        <input type="number" id="age" min="10" max="100" required placeholder="Enter your age" />
+      </label>
+      <label for="gender">Gender:
+        <select id="gender" required>
+          <option value="">Select gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </label>
+      <label for="calHeight">Height (cm):
+        <input type="number" id="calHeight" min="100" max="250" required placeholder="Enter height in cm" />
+      </label>
+      <label for="calWeight">Weight (kg):
+        <input type="number" id="calWeight" min="30" max="200" required placeholder="Enter weight in kg" />
+      </label>
+      <label for="activity">Activity Level:
+        <select id="activity" required>
+          <option value="">Select activity level</option>
+          <option value="1.2">Sedentary (little or no exercise)</option>
+          <option value="1.375">Lightly active (1-3 days/week)</option>
+          <option value="1.55">Moderately active (3-5 days/week)</option>
+          <option value="1.725">Very active (6-7 days/week)</option>
+          <option value="1.9">Super active (hard exercise & physical job)</option>
+        </select>
+      </label>
+      <label for="calGoal">Goal:
+        <select id="calGoal" required>
+          <option value="">Select your goal</option>
+          <option value="maintain">Maintain Weight</option>
+          <option value="lose">Lose Weight</option>
+          <option value="gain">Gain Weight</option>
+        </select>
+      </label>
+      <button type="submit">Calculate Calories</button>
+    </form>
+    <section id="calorieResult" class="exercise-container" style="flex-direction:column;align-items:center;"></section>
+  </main>
+  <div id="footer-root"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer-root').innerHTML = html);
+  </script>
+  <script src="calorie.js"></script>
+</body>
+</html> 

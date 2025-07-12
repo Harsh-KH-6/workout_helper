@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI Calculator | Workout Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="diet.html" class="nav-link">Diet Planner</a>
+    <a href="bmi.html" class="nav-link active">BMI Calculator</a>
+    <a href="calorie.html" class="nav-link">Calorie Calculator</a>
+    <a href="progress.html" class="nav-link">Progress Tracker</a>
+  </nav>
+  <header>
+    <h1>BMI Calculator</h1>
+    <p>Calculate your Body Mass Index and see your health category</p>
+  </header>
+  <main>
+    <form id="bmiForm" class="form-card">
+      <label for="bmiHeight">Height (cm):
+        <input type="number" id="bmiHeight" min="100" max="250" required placeholder="Enter height in cm" />
+      </label>
+      <label for="bmiWeight">Weight (kg):
+        <input type="number" id="bmiWeight" min="30" max="200" required placeholder="Enter weight in kg" />
+      </label>
+      <button type="submit">Calculate BMI</button>
+    </form>
+    <section id="bmiResult" class="exercise-container" style="flex-direction:column;align-items:center;"></section>
+  </main>
+  <div id="footer-root"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer-root').innerHTML = html);
+  </script>
+  <script src="bmi.js"></script>
+</body>
+</html> 

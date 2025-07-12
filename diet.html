@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diet Planner | Workout Helper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="diet.html" class="nav-link active">Diet Planner</a>
+    <a href="bmi.html" class="nav-link">BMI Calculator</a>
+    <a href="calorie.html" class="nav-link">Calorie Calculator</a>
+    <a href="progress.html" class="nav-link">Progress Tracker</a>
+  </nav>
+  <header>
+    <h1> Diet Planner </h1>
+    <p>Get a personalized diet plan based on your goal and preferences</p>
+  </header>
+  <main>
+    <form id="dietForm" class="form-card">
+      <label for="dietType">Diet Type:
+        <select id="dietType" required>
+          <option value="">Select diet type</option>
+          <option value="veg">Vegetarian</option>
+          <option value="nonveg">Non-Vegetarian</option>
+          <option value="both">Both</option>
+        </select>
+      </label>
+      <label for="goal">Goal:
+        <select id="goal" required>
+          <option value="">Select your goal</option>
+          <option value="gain">Gain Weight</option>
+          <option value="lose">Lose Weight</option>
+          <option value="maintain">Maintain Weight</option>
+        </select>
+      </label>
+      <label for="weight">Current Weight (kg):
+        <input type="number" id="weight" min="30" max="200" required placeholder="Enter your current weight" />
+      </label>
+      <button type="submit">Get Diet Plan</button>
+    </form>
+    <section id="dietResult" class="exercise-container" style="flex-direction:column;align-items:center;"></section>
+  </main>
+  <div id="footer-root"></div>
+  <script>
+    fetch('footer.html')
+      .then(res => res.text())
+      .then(html => document.getElementById('footer-root').innerHTML = html);
+  </script>
+  <script src="diet.js"></script>
+</body>
+</html> 
