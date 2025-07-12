@@ -19,18 +19,18 @@ A modern, interactive fitness web app to help you plan workouts, track progress,
 ## 📸 Screenshots
 
 ### Home Page
-![Home 1](assets/home1.png)
-![Home 2](assets/home2.png)
+![Home 1](assets/Home1.png)
+![Home 2](assets/Home2.png)
 
 ### BMI Calculator
-![BMI](assets/bmi.png)
+![BMI](assets/Bmi.png)
 
 ### Calorie Calculator
-![Calorie](assets/calorie.png)
+![Calorie](assets/Calorie.png)
 
 ### Progress Tracker
-![Tracker 1](assets/tracker1.png)
-![Tracker 2](assets/tracker2.png)
+![Tracker 1](assets/Tracker1.png)
+![Tracker 2](assets/Tracker2.png)
 
 ---
 
