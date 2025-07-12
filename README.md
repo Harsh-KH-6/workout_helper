@@ -40,7 +40,7 @@ A modern, interactive fitness web app to help you plan workouts, track progress,
 - **Responsive & accessible web design**
 - **UI/UX best practices**
 - **Prompt engineering for AI-assisted coding**
-- **Use of [Cursor.ai](https://www.cursor.so/) and ChatGPT for rapid prototyping and code review**
+- **Use of Deepseek, Claude and ChatGPT for rapid prototyping and code review**
 - **LocalStorage for persistent progress tracking**
 - **Semantic HTML & ARIA for accessibility**
 - **Modern CSS (variables, gradients, dark mode)**
