@@ -67,7 +67,7 @@ A modern, interactive fitness web app to help you plan workouts, track progress,
 ## 🤝 Connect With Me
 
 - **Email:** [harsh06pb@gmail.com](mailto:harsh06pb@gmail.com)
-- **LinkedIn:** [linkedin.com/in/your-linkedin-profile](https://linkedin.com/in/khharsh)
+- **LinkedIn:** (https://linkedin.com/in/khharsh)
 - **GitHub:** [Harsh-KH-6](https://github.com/Harsh-KH-6)
 
 ---
