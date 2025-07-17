@@ -1,6 +1,6 @@
 # 🏋️‍♂️ Fitness Pro – Workout Helper
 
-A modern, interactive fitness web app to help you plan workouts, track progress, calculate BMI & calories, and get personalized diet plans. Built with a focus on design, usability, and smart engineering using AI tools like Cursor.ai and ChatGPT.
+A modern, interactive fitness web app to help you plan workouts, track progress, calculate BMI & calories, and get personalized diet plans. Built with a focus on design, usability, and smart engineering using AI tools like Deepseek , Claude and ChatGPT.
 
 ---
 
